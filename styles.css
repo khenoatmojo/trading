@@ -1,20 +1,23 @@
-/* Mengatur font dan margin dasar */
-body {
-    font-family: 'Poppins', sans-serif;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
     color: #333;
 }
 
-/* Styling untuk header */
 header {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0;
     z-index: 1000;
 }
 
@@ -22,45 +25,39 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 
 header h1 {
-    margin: 0;
     font-size: 24px;
-    color: #fff;
+    color: #333;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 
-header nav ul li {
+nav ul li {
     margin-left: 20px;
 }
 
-header nav ul li a {
+nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-weight: 600;
+    color: #333;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
-header nav ul li a:hover {
-    color: #ff7e5f;
+nav ul li a:hover {
+    color: #feb47b;
 }
 
-/* Styling untuk section hero */
 .hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background: url('path/to/hero-background.jpg') no-repeat center center/cover;
     color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    margin-top: 80px;
 }
 
 .hero h2 {
@@ -70,20 +67,13 @@ header nav ul li a:hover {
 
 .hero p {
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
-.hero .cta {
-    text-decoration: none;
-    background: #ff7e5f;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: background 0.3s;
-}
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff7e5f;
 
-.hero .cta:hover {
-    background: #feb47
 ::contentReference[oaicite:0]{index=0}
  
